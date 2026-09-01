@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@layer utilities {
+  @keyframes police-beacon {
+    0%, 100% { box-shadow: 0 0 25px rgba(220, 38, 38, 0.7), inset 0 0 15px rgba(220, 38, 38, 0.4); }
+    50% { box-shadow: 0 0 25px rgba(37, 99, 235, 0.7), inset 0 0 15px rgba(37, 99, 235, 0.4); }
+  }
+
+  @keyframes pulse-emergency {
+    0%, 100% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.05); opacity: 0.9; }
+  }
+
+  .animate-police-beacon {
+    animation: police-beacon 1.5s infinite;
+  }
+
+  .animate-pulse-emergency {
+    animation: pulse-emergency 1.8s ease-in-out infinite;
+  }
+
+  /* Custom scrollbars */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #090d16;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1e293b;
+    border-radius: 9999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #334155;
+  }
+}
+
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+}

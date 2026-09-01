@@ -1,0 +1,12 @@
+{
+  "name": "Rakshak - Police & Citizen Assistant",
+  "description": "Comprehensive Police and Citizen Assistant app with Emergency SOS, Nearest Police Station Finder, Incident and e-FIR Reporting, Complaint Tracking, Missing Person/Item Search, Traffic Violation Reporter, Legal Procedure Guide, Multilingual AI Legal Assistant, and Police Official Admin Dashboard.",
+  "requestFramePermissions": [
+    "geolocation",
+    "microphone",
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
